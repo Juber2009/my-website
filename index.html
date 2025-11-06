@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>আমার ওয়েবসাইট — নমুনা</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#2563eb;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;color-scheme:dark}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071024 0%, #071a2a 100%);color:#e6eef8}
+    .container{max-width:1000px;margin:40px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700;letter-spacing:0.2px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:500}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:48px 0}
+    .hero h1{font-size:34px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:16px;border-radius:12px}
+    .card h3{margin:0 0 8px}
+    footer{opacity:0.7;padding:28px 0;text-align:center;color:var(--muted)}
+    @media(min-width:760px){.hero{grid-template-columns:1fr 360px}.hero .card{height:100%}}
+    .contact-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">আপনার নাম / ব্র্যান্ড</div>
+      <nav>
+        <a href="#about">পরিচিতি</a>
+        <a href="#works">কাজ</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <h1>স্বাগতম — আমি ডিজাইন করি ও তৈরি করি</h1>
+          <p>একটি সিম্পল, দ্রুত এবং মোবাইল-ফ্রেন্ডলি ওয়েবসাইট। এখানে আপনার সারসংক্ষেপ, কাজের নমুনা এবং যোগাযোগের লিংক রাখতে পারবেন।</p>
+          <a class="btn" href="#contact">ফ্রি কনসাল্টেশন</a>
+
+          <div class="grid" style="margin-top:22px">
+            <div class="card">
+              <h3>ইন্টারেক্টিভ ডিজাইন</h3>
+              <p style="color:var(--muted)">মিনিমাল ও রেস্পন্সিভ ইন্টারফেস যা দ্রুত লোড হয়।</p>
+            </div>
+            <div class="card">
+              <h3>ফাস্ট লোড</h3>
+              <p style="color:var(--muted)">লাইটওয়েট কোড — ভালো SEO ও UX।</p>
+            </div>
+            <div class="card">
+              <h3>সুবিধাজনক কাস্টমাইজ</h3>
+              <p style="color:var(--muted)">সহজে রং, টেক্সট ও ছবি বদলান।</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="contact-card">
+          <h3>নোট</h3>
+          <p style="color:var(--muted)">এই টেমপ্লেটটি সম্পূর্ণ ফ্রি। নিচের নির্দেশনা অনুসরণ করে আপনি নিজে হোস্ট করেতে পারবেন — বা আমি সাহায্য করব।</p>
+          <p style="margin-top:12px"><strong>ইমেইল: </strong> <a href="mailto:you@example.com">you@example.com</a></p>
+        </aside>
+      </section>
+
+      <section id="about" style="margin-top:20px">
+        <h2>পরিচিতি</h2>
+        <p style="color:var(--muted)">আপনার সংক্ষিপ্ত পরিচিতি এখানে লিখুন — যেমন আপনি কী করেন, আপনার দক্ষতা, এবং কোন ধরনের ক্লায়েন্টদের সাথে কাজ করতে পছন্দ করেন।</p>
+      </section>
+
+      <section id="works" style="margin-top:20px">
+        <h2>কাজের নমুনা</h2>
+        <div class="grid">
+          <div class="card"><h3>প্রজেক্ট ১</h3><p style="color:var(--muted)">প্রজেক্ট বর্ণনা।</p></div>
+          <div class="card"><h3>প্রজেক্ট ২</h3><p style="color:var(--muted)">প্রজেক্ট বর্ণনা।</p></div>
+          <div class="card"><h3>প্রজেক্ট ৩</h3><p style="color:var(--muted)">প্রজেক্ট বর্ণনা।</p></div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:20px">
+        <h2>যোগাযোগ</h2>
+        <div style="display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px">
+          <div class="card">
+            <form action="mailto:you@example.com" method="post" enctype="text/plain">
+              <label>নাম</label>
+              <input type="text" name="name" placeholder="আপনার নাম" required>
+              <label>ইমেইল</label>
+              <input type="email" name="email" placeholder="you@example.com" required>
+              <label>বার্তা</label>
+              <textarea name="message" rows="4" placeholder="আপনি কী জানতে চান?" required></textarea>
+              <button class="btn" type="submit">পাঠিয়ে দিন</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> আপনার নাম — তৈরী: এই টেমপ্লেটটি ফ্রি
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
